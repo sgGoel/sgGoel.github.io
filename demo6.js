@@ -20,61 +20,6 @@ const proxyurl = "https://cors-anywhere.herokuapp.com/" //thanks sideshowbarker,
 
 //var demo_data;
 
-/*d3.json(proxyurl+'https://raw.github.com/sgGoel/fake-news-proj/master/demo_data_steps.json',function(updated_cols){
-    steps = updated_cols["steps"]
-    console.log(steps)
-    var prev_cols = {}
-    i = 0
-    //for (i in steps){ //should currently only be one step
-        s = steps[i]
-        //console.log(s)
-        var new_cols = s['colors'] //INTERESTING
-        //console.log(prev_cols)
-        console.log(new_cols)
-        /*var color2 = function ret_col(n){
-            c = new_cols[n]
-            if (c in prev_cols){
-                return color3(n)
-            }
-            if (c=='ROB'){
-                return "rgb(232, 113, 84)"
-            }
-            if (c=='GY'){
-                return "rgb(143, 179, 80)"
-            }
-            return "rgb(222, 222, 222)"
-        }*/
-        /*var color3 = function ret_col2(n){
-            c = new_cols[n]
-            if (c=='ROB'){
-                return "rgb(232, 168, 116)"
-            }
-            if (c=='GY'){
-                return "rgb(202, 214, 107)"
-            }
-            return "rgb(222, 222, 222)"
-        }
-        prev_cols = {}
-        for (k in new_cols){
-            prev_cols[k] = new_cols[k]
-        }
-        /*d3.selectAll(".node").transition()
-            .duration(1000)
-            .delay(function(){
-                return (i*3000)-2000
-                })
-            .style("fill", function (d) {
-                return color2(d.index);})*/
-        /*d3.selectAll(".node").transition()
-            .duration(1000)
-            .delay(function(){
-                return (i*3000)
-                })
-            .style("fill", function (d) {
-                return color3(d.index);})*/
-    //}
-})
-
 d3.json(proxyurl+'https://raw.github.com/sgGoel/fake-news-proj/master/demo_data_lpa_initial.json',function(graph){
     
     /*function make_json_network(demo_data){
@@ -119,7 +64,7 @@ d3.json(proxyurl+'https://raw.github.com/sgGoel/fake-news-proj/master/demo_data_
     console.log(graph)
     
     //Constants for the SVG
-var width = 1400,
+  var width = 1400,
     height = 700;
 
 //Set up the colour scale
