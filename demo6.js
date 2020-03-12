@@ -73,7 +73,7 @@ var color = function ret_col(n){
     if (n==0){
         //return "rgb(232, 113, 84)"
         //return "rgb(232, 168, 116)"
-      return "rgb(202, 214, 107)"
+        return "rgb(202, 214, 107)"
     }
     else if (n==5) {
         //return "rgb(143, 179, 80)"
